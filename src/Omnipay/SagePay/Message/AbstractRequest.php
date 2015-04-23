@@ -31,6 +31,16 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
         return $this->setParameter('simulatorMode', $value);
     }
 
+    public function getBasket()
+    {
+        return $this->getParameter('basket');
+    }
+
+    public function setBasket($basketData)
+    {
+        return $this->setParameter('basket', $basketData);
+    }
+
     public function getService()
     {
         return $this->action;
