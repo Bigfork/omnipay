@@ -49,7 +49,7 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
     protected function getBaseData()
     {
         $data = array();
-        $data['VPSProtocol'] = '2.23';
+        $data['VPSProtocol'] = '3.00';
         $data['TxType'] = $this->action;
         $data['Vendor'] = $this->getVendor();
 
